@@ -1,0 +1,160 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #2d3352;
+  font-family: "Quicksand";
+  color: #555;
+  font-size: 11px;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.container {
+  min-height: 100%;
+  margin-left: -150px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  width: 280px;
+  height: 497.7777777778px;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+}
+
+.menu-view {
+  background-color: #3E486D;
+  position: relative;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transform-origin: 150% 50%;
+          transform-origin: 150% 50%;
+}
+.menu-view .menu-item {
+  height: 76.5811965812px;
+  line-height: 76.5811965812px;
+  color: white;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+}
+.menu-view .menu-item > * {
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.menu-view .menu-item > *:not(.badge) {
+  opacity: 0.5;
+}
+.menu-view .menu-item .icon {
+  margin: 2px 1.5rem auto 1.5rem;
+}
+.menu-view .menu-item .badge {
+  background-color: #FD7F72;
+  padding: 5px 11px;
+  margin-left: 2rem;
+  border-radius: 999px;
+}
+.menu-view .menu-item:hover {
+  background-color: #373f60;
+}
+.menu-view .menu-item.active {
+  background-color: #313857;
+  border-color: #FD7F72;
+}
+.menu-view .menu-item.active .text {
+  opacity: 1;
+}
+
+.list-view {
+  background-color: white;
+  position: relative;
+}
+.list-view header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.list-view header .icon {
+  padding: 1.5rem;
+}
+.list-view header h1 {
+  flex-grow: 1;
+  text-align: center;
+}
+.list-view .list-item {
+  background-color: #FD7F72;
+  color: white;
+  position: relative;
+}
+.list-view .list-item .regrade {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  line-height: 86px;
+  padding-left: 1.5rem;
+  cursor: pointer;
+}
+.list-view .list-item .card {
+  height: 86px;
+  position: relative;
+  background-color: white;
+  color: #555;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.5s ease, z-index 0.5s ease, -webkit-transform 0.5s ease, -webkit-transform-origin 0.5s ease;
+  transition: box-shadow 0.5s ease, transform 0.5s ease, transform-origin 0.5s ease, z-index 0.5s ease;
+  transition: box-shadow 0.5s ease, transform 0.5s ease, transform-origin 0.5s ease, z-index 0.5s ease, -webkit-transform 0.5s ease, -webkit-transform-origin 0.5s ease;
+}
+.list-view .list-item .card .thumbnail {
+  flex: 0 0 44px;
+  margin: 0 16px;
+}
+.list-view .list-item .card .thumbnail img {
+  width: 100%;
+  border-radius: 999px;
+}
+.list-view .list-item .card .details {
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list-view .list-item .card .details .name {
+  font-size: 12px;
+}
+.list-view .list-item .card .details > *:not(.name) {
+  opacity: 0.6;
+}
+.list-view .list-item .card:hover {
+  background-color: #f2f2f2;
+}
+.list-view .list-item .card.active {
+  z-index: 3;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform-origin: -180% 50%;
+          transform-origin: -180% 50%;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}
